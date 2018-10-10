@@ -25,7 +25,7 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Inicio', component: HomePage, iosicon: 'home'},
-      { title: 'Novo', component: NovoPage, iosicon: 'add'},
+      { title: 'Novo', component: NovoPage, iosicon: 'add-circle'},
       { title: 'Meus Arquivos', component: ArquivosPage, iosicon: 'folder-open'}
     ];
 

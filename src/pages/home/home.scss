@@ -7,10 +7,23 @@ page-home {
     padding: 0px !important;
 }
 
-.imgicon{
+.imgicon-home{
     width: 40%;
     margin: auto;
     max-width: 120px;
+}
+//Toda a parte azul do menuside (toobar) está aqui.
+.itemstoobar{
+    padding: 10%;
+    .imgicon-toobar{
+        width: 32%;
+        margin: 0% -10%;
+        max-width: 120px;
+    }
+    #digital-toobar{
+        margin-left: 60%;
+        margin-top: 5%;
+    }
 }
 
 #principaltextocard1{
@@ -43,17 +56,22 @@ page-home {
     margin: auto;
 }
 
-.botaohome{
-    color: red;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    margin: auto;
-}
-
-ion-icon {
+.ion-list-home {
     display: inline-block;
-    font-size: 2.3em;
+    font-size: 1.15em;
+    color: red;
+    background-color: #ffffff;
+}
+.cor{
+    color: #757575;
+}
+#tamanho-icon-form{
+    font-size: 170%;
+}
+.ion-icon-menuside{
+    color: #757575;
+    width: 17%;
+    font-size: 1.5em;
 }
 
 .toolbar-background {
@@ -64,7 +82,4 @@ ion-icon {
 }
 .toolbar-button-inner{
     color: #ffffff;
-}
-.lista{
-    padding-top: 30px;
 }

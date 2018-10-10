@@ -1,17 +1,21 @@
 <ion-menu [content]="content">
   <ion-header>
     <ion-toolbar>
-      <ion-title>Menu</ion-title>
+        <div class="itemstoobar">
+      <ion-title>Anamnesel <br> <div id="digital-toobar"> Digital </div></ion-title>
+          <img class="imgicon-toobar" src="../../assets/imgs/iconp2.png"/>
+    </div>
     </ion-toolbar>
   </ion-header>
 
   <ion-content>
     <ion-list> 
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-          <ion-icon  name="{{p.iosicon}}"> </ion-icon>
+      <button menuClose ion-item *ngFor="let p of pages" class="cor" (click)="openPage(p)">
+          <ion-icon class="ion-icon-menuside" name="{{p.iosicon}}"> </ion-icon>
         {{p.title}}
       </button>
     </ion-list>
+    
   </ion-content>
 </ion-menu>
 
