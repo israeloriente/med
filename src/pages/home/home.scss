@@ -1,85 +1,64 @@
 page-home {
     
-}
+    // elimina o padding de todo o card e lista da pagina home.
+    .no-padding {
+        padding: 0px !important;
+    }
 
-// elimina o padding de todo o card e lista da pagina home.
-.no-padding {
-    padding: 0px !important;
-}
+    .card{
+        width:100%;
+        height: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
 
-.imgicon-home{
-    width: 40%;
-    margin: auto;
-    max-width: 120px;
-}
-//Toda a parte azul do menuside (toobar) está aqui.
-.itemstoobar{
-    padding: 10%;
-    .imgicon-toobar{
-        width: 32%;
-        margin: 0% -10%;
+
+    .imgicon-home{
+        width: 40%;
+        margin: auto;
         max-width: 120px;
     }
-    #digital-toobar{
-        margin-left: 60%;
-        margin-top: 5%;
+
+    #principaltextocard1{
+        color: #4e84dc;
+        text-align: center;
+        font-weight: bold;  
+        font-size: 130%;
+        padding: 2%;
     }
-}
 
-#principaltextocard1{
-    color: #4e84dc;
-    text-align: center;
-    font-weight: bold;
-    @media only screen and (min-width: 768px) {
-        font-size: 200%;
-    }    
-    font-size: 130%;
-    padding: 2%;
-}
-
-
-.card{
-    width:100%;
-    height: 100%;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-#textocard{
-    @media only screen and (min-width: 768px) {
-        font-size: 20px;
+    .paragrafos{
+        text-align: center;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        padding-right: 0%;
+        padding-left: 0%;
     }
-}
-.textocard{
-    font-size: 2%;
-    color: #8b8b8b;
-    text-align: center;
-    margin: auto;
+    .botoes{
+        width: 100%;
+        height: 99%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        background-color: rgb(255, 255, 255);
+        color: red;
+        
+    }
+    .label{
+        margin-bottom: 0px;
+        margin-right: 0px;
+        margin-top: 0px;    
+    }
+    .coluna2{
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+    .item-inner{
+        padding-right: 0px !important;
+    }
+
+
+
 }
 
-.ion-list-home {
-    display: inline-block;
-    font-size: 1.15em;
-    color: red;
-    background-color: #ffffff;
-}
-.cor{
-    color: #757575;
-}
-#tamanho-icon-form{
-    font-size: 170%;
-}
-.ion-icon-menuside{
-    color: #757575;
-    width: 17%;
-    font-size: 1.5em;
-}
-
-.toolbar-background {
-    background-color: #05c0b7;
-}
-.toolbar-title{
-    color: #ffffff;
-}
-.toolbar-button-inner{
-    color: #ffffff;
-}

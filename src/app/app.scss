@@ -1,3 +1,34 @@
+//Toda a parte azul/verde do menuside (toobar) está aqui.
+.imgMenuside{
+    width: 100%;
+    max-width: 120px;
+    padding-right: 0%;
+}
+.ion-title-anamnese{
+
+}
+.toolbar-background {
+    background-color: #05c0b7;
+}
+.toolbar-title{
+    color: #ffffff;
+}
+.toolbar-button-inner{
+    color: #ffffff;
+}
+.ion-icon-menuside{
+    color: #757575;
+    width: 17%;
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 768px) {
     .button-inner{
         font-size: 1.5em;
