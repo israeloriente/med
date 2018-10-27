@@ -1,3 +1,60 @@
 page-arquivos {
 
+    #active:active{
+        background-color: rgb(230, 230, 230);
+    }
+    .list{
+        margin-bottom: 0%;
+    }
+    .colunaBotao{
+        padding-bottom: 0%;
+        padding-top: 0%;
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+    .item-inner{
+        padding-right: 0% !important;
+    }
+    .label{
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+    .coluna0{
+        padding-bottom: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 0%;
+    }
+    .coluna1{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .botoes{
+        height: 98%;
+        width: 100%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        background-color: white;
+    }
+    .listas{
+        padding-left: 1% !important;
+    }
+    .iconTrash{
+        color: red;
+        font-size: 1.8em;
+    }
+    .iconCloud{
+        color: #757575;
+        font-size: 1.6em;
+    }
+    
+    
 }
+
+
+
+
+        

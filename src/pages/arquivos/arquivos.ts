@@ -19,8 +19,10 @@ export class ArquivosPage {
               public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ArquivosPage');
+  linkNaoDefinido(){
+    console.log('testando');
   }
+
+
 
 }
