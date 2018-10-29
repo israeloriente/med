@@ -1,56 +1,183 @@
 page-arquivos {
 
-    #active:active{
-        background-color: rgb(230, 230, 230);
+    .corpo{
+        background-color: #f0f0f0;  
     }
-    .list{
-        margin-bottom: 0%;
+        .listas{
+            padding-left: 0%;
+        }
+            // Simula o click do botão (hover)
+            #active:active{
+                background-color: rgb(230, 230, 230);
+            }
+            .coluna0{
+                padding: 0% 0% 0% 0%;
+            }
+                .img{
+                    width: 90%;
+                    padding-top: 35%;
+                    padding-left: 20%;
+                    padding-bottom: 35%;
+                }
+            .coluna1{
+                padding-top: 0%;
+                padding-bottom: 0%;
+            }
+                .linha1Col1{
+                    padding-top: 15%;
+                    color: #1d1d1d;
+                }
+                    .iconCenter{
+                        color: #464646;
+                        font-size: 1.1em;
+                        padding-right: 1%;
+                        padding-left: 1%;
+                    }
+                .linha2Col1{
+                    padding-bottom: 10%;
+                    color: #464646;
+                }
+                    .iconCenter{
+                        color: #464646;
+                        font-size: 1.1em;
+                        padding-right: 1%;
+                        padding-left: 1%;
+                    }
+            .colunaBotao{
+                padding: 0% 0% 0% 0%;
+            }
+                .botoes{
+                    height: 100%;
+                    width: 100%;
+                    margin: 0% 0% 0% 0%;
+                    background-color: white;
+                }
+    .button-md {
+        box-shadow: none;
     }
-    .colunaBotao{
-        padding-bottom: 0%;
-        padding-top: 0%;
-        padding-right: 0%;
-        padding-left: 0%;
-    }
+    // Deixa igual o iphone as listas
+    .list-md > .item-block:first-child, .item-block:first-child{
+        border-top: 0.55px solid #c8c7cc;
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-top-color: rgb(200, 199, 204);
+    }      
     .item-inner{
         padding-right: 0% !important;
     }
     .label{
-        margin-bottom: 0px;
-        margin-top: 0px;
-        margin-right: 0px;
-    }
-    .coluna0{
-        padding-bottom: 0%;
-        padding-left: 0%;
-        padding-right: 0%;
-        padding-top: 0%;
-    }
-    .coluna1{
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-    .botoes{
-        height: 98%;
-        width: 100%;
-        margin-top: 0%;
-        margin-bottom: 0%;
-        margin-left: 0%;
-        margin-right: 0%;
-        background-color: white;
-    }
-    .listas{
-        padding-left: 1% !important;
+        margin: 0% 0%;
     }
     .iconTrash{
         color: red;
         font-size: 1.8em;
     }
     .iconCloud{
-        color: #757575;
+        color: #464646;
         font-size: 1.6em;
     }
-    
+    #iconNotaBoa{
+        padding-left: 4%;
+        color: green;
+    }
+    #iconNotaRuim{
+        color: rgb(197, 7, 7);
+        padding-left:4%;
+    }
+    // Display iphone 4
+    @media (max-width: 320px) and (max-height: 480px) {
+        #nomePaciente{
+            max-width: 20ch; overflow: hidden; text-overflow: ellipsis;  white-space: nowrap;
+        }
+        .colunaBotao{
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+        }
+        .linha1Col1, .linha2Col1{
+            font-size: 80%;
+        }
+        .iconCloud{
+            font-size: 130%;
+        }
+        .iconTrash{
+            font-size: 130%;
+        }
+    }
+    // Display iphone 5
+    @media (min-width: 320px) and (min-height: 568px) and (max-height: 568px){
+        #nomePaciente{
+            max-width: 20ch; overflow: hidden; text-overflow: ellipsis;  white-space: nowrap;
+        }
+        .linha1Col1, .linha2Col1{
+            font-size: 75%;
+        }
+        .colunaBotao{
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+        }
+        .iconCloud{
+            font-size: 140%;
+        }
+        .iconTrash{
+            font-size: 150%;
+        }
+    }
+    // Display tamanho iphone 6/7/8 Plus
+    @media (min-width: 376px) and (max-height: 736px) {
+        #nomePaciente{
+            max-width: 20ch; overflow: hidden; text-overflow: ellipsis;  white-space: nowrap;
+        }
+        .linha1Col1, .linha2Col1{
+            font-size: 100%;
+        }
+    }
+    // Display iphone X
+    @media (min-height: 800px) {
+            #nomePaciente{
+                max-width: 20ch; overflow: hidden; text-overflow: ellipsis;  white-space: nowrap;
+            }
+            .linha1Col1, .linha2Col1{
+                font-size: 90%;
+            }
+            .linha1Col1{
+                padding-top: 13% !important;
+            }
+    }
+    // Ipad
+    @media (min-height: 1000px) {
+        .colunaBotao{
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+        }
+        .iconCloud{
+            font-size: 80%;
+        }
+        .iconTrash{
+            font-size: 90%;
+        }
+        .list{
+            margin-bottom: 0%;
+        }
+        .img{
+            width: 60%;
+            margin: 18% 20%;
+            padding: 0% 0% 0% 0%;
+        }
+        .linha1Col1{
+            padding-top: 2.5% !important;
+            font-size: 75%;
+        }
+        .linha2Col1{
+            padding-bottom: 1% !important;
+            font-size: 75%;
+        }
+    }
+    // Ipad pro
+    @media (min-height: 1360px) {
+        .linha1Col1{
+            padding-top: 3% !important;            
+        }
+    }
     
 }
 

@@ -13,7 +13,7 @@ import { ArquivosPage } from '../pages/arquivos/arquivos';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = ArquivosPage;
+  rootPage: any = HomePage;
 
   pages: Array<{title: string,
                 component: any,

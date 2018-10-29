@@ -7,26 +7,27 @@
   </ion-navbar>
 
 </ion-header>
-<ion-content>
+<ion-content class="corpo">
+<ion-card>
 
-    <ion-list>
+
+     <!-- primeira lista -->
+     <ion-list>
         <ion-item lines class="listas">
           <ion-row>
-            <ion-col col-2 class="coluna0">
-              <ion-thumbnail item-start>
+            <ion-col col-2 col-md-1 class="coluna0">
                 <img class="img" (click)="linkNaoDefinido()" src="../../assets/imgs/prancheta.png">
-              </ion-thumbnail>
             </ion-col>
-             <ion-col col-6 class="coluna1" (click)="linkNaoDefinido()" id="active">
-              <p> <ion-icon class="iconCloud" name="person"></ion-icon>
+             <ion-col col-6 col-md-9 class="coluna1" (click)="linkNaoDefinido()" id="active">
+              <p class="linha1Col1" id="nomePaciente"> <ion-icon class="iconCenter" name="person"></ion-icon>
               Israel Nunes Oriente</p>
-              <p> <ion-icon class="iconCloud" name="md-calendar"></ion-icon> 
-              27/10/2018</p>
+              <p class="linha2Col1"> <ion-icon class="iconCenter" name="md-calendar"></ion-icon> 
+              27/10/2018 <ion-icon class="iconCenter" id="iconNotaBoa" name="ios-paper-outline"></ion-icon> 9.70 </p>
             </ion-col>
-            <ion-col col-2 class="colunaBotao">
+            <ion-col col-2 col-md-1 class="colunaBotao">
                 <button ion-button full color="light" class="botoes"> <ion-icon class="iconTrash" name="trash"></ion-icon> </button>
             </ion-col>
-            <ion-col col-2 class="colunaBotao">
+            <ion-col col-2 col-md-1 class="colunaBotao" id="colunaBotaoNuvem">
                 <button ion-button color="light" class="botoes"> <ion-icon class="iconCloud" name="md-cloud-upload"></ion-icon> </button>
             </ion-col>
           </ion-row>
@@ -34,5 +35,29 @@
     </ion-list>
 
 
+    <!-- Segunda lista -->
+    <ion-list>
+        <ion-item lines class="listas">
+          <ion-row>
+            <ion-col col-2 col-md-1 class="coluna0">
+                <img class="img" (click)="linkNaoDefinido()" src="../../assets/imgs/prancheta.png">
+            </ion-col>
+             <ion-col col-6 col-md-9 class="coluna1" (click)="linkNaoDefinido()" id="active">
+              <p class="linha1Col1" id="nomePaciente"> <ion-icon class="iconCenter" name="person"></ion-icon>
+              Israel Nunes Oriente</p>
+              <p class="linha2Col1"> <ion-icon class="iconCenter" name="md-calendar"></ion-icon> 
+              27/10/2018 <ion-icon class="iconCenter" id="iconNotaRuim" name="ios-paper-outline"></ion-icon> 5.20 </p>
+            </ion-col>
+            <ion-col col-2 col-md-1 class="colunaBotao">
+                <button ion-button full color="light" class="botoes"> <ion-icon class="iconTrash" name="trash"></ion-icon> </button>
+            </ion-col>
+            <ion-col col-2 col-md-1 class="colunaBotao" id="colunaBotaoNuvem">
+                <button ion-button color="light" class="botoes"> <ion-icon class="iconCloud" name="md-cloud-upload"></ion-icon> </button>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+    </ion-list>
 
+
+</ion-card>
 </ion-content>
