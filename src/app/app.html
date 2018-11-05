@@ -7,7 +7,7 @@
               <img class="imgMenuside" src="../../assets/imgs/iconp2.png"/>
           </ion-col>
           <ion-col col-9>
-                  <ion-title class="ion-title-anamnese">Anamnesel Digital </ion-title>
+                  <div class="ion-title-anamnese">Anamnese <br> <p id="digital">Digital</p> </div>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -15,7 +15,7 @@
   </ion-header>
 
   <ion-content>
-    <ion-list> 
+    <ion-list no-lines> 
       <button menuClose ion-item *ngFor="let p of pages" class="cor" (click)="openPage(p)">
           <ion-icon class="ion-icon-menuside" name="{{p.iosicon}}"> </ion-icon>
         {{p.title}}

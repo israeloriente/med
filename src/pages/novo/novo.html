@@ -7,7 +7,124 @@
   </ion-navbar>
 </ion-header>
 
-
 <ion-content padding>
 
+  <ion-list>
+
+  <ion-item>
+    <ion-label floating>Nome</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  
+  <br>
+  
+  <ion-item>
+    <ion-label>Sexo</ion-label>
+    <ion-select [(ngModel)]="sexo">
+      <ion-option value="mas">Masculino</ion-option>
+      <ion-option value="fem">Feminino</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Idade</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Leito</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label floating>Enfermaria</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Profissão</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <br>
+
+  <ion-item>
+    <ion-label>Hora de início</ion-label>
+    <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="nulo"></ion-datetime>
+  </ion-item>
+
+  <br>
+
+  <ion-item>
+    <ion-label>Cor</ion-label>
+    <ion-select [(ngModel)]="cor">
+      <ion-option value="b">Branco</ion-option>
+      <ion-option value="prt">Preto</ion-option>
+      <ion-option value="par">Pardo</ion-option>
+      <ion-option value="a">Amarelo</ion-option>
+      <ion-option value="i">Indígena</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Residência anterior</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <br>
+
+  <ion-item>
+    <ion-label>Estado civil</ion-label>
+    <ion-select [(ngModel)]="estadoCivil">
+      <ion-option value="b">SOLTEIRO</ion-option>
+      <ion-option value="prt">Casado</ion-option>
+      <ion-option value="par">Separado</ion-option>
+      <ion-option value="a">Divorciado</ion-option>
+      <ion-option value="i">Viúvo</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <br>
+
+  <ion-item>
+      <ion-label>Religião</ion-label>
+      <ion-select [(ngModel)]="religiao">
+        <ion-option value="católica">Católica</ion-option>
+        <ion-option value="evangélicas">Evangélicas</ion-option>
+        <ion-option value="espírita">Espírita</ion-option>
+        <ion-option value="umbanda">Umbanda</ion-option>
+        <ion-option value="candomblé">Candomblé</ion-option>
+        <ion-option value="nenhum">Sem religião</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <br>
+
+    <ion-item>
+        <ion-label>Orientação Sexual</ion-label>
+        <ion-select [(ngModel)]="orientacao">
+          <ion-option value="Homo">Homosexual</ion-option>
+          <ion-option value="Hetero">Heterosexual</ion-option>
+          <ion-option value="Trans">Transexual</ion-option>
+          <ion-option value="autosex">Autosexual</ion-option>
+          <ion-option value="assexual">Assexual</ion-option>
+        </ion-select>
+      </ion-item>
+
+    <ion-item>
+        <ion-label floating>Nacionalidade</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+
+
+<br>
+    <div padding>
+        <!-- Botão Próximo -->
+        <button ion-button full color="med" icon-end> Próximo
+          <ion-icon name='arrow-forward'></ion-icon>
+        </button>
+    </div>
+
+</ion-list>  
 </ion-content>

@@ -20,12 +20,12 @@
         <ion-list>
             <ion-item no-padding>  
               <ion-row>
-              <ion-col col-7>              
+              <ion-col col-7 col-md-7>              
                 <p class="paragrafos"> Dúvidas? <br>
                  Inicie nosso tutorial </p>
               </ion-col>
-              <ion-col col-4 offset-1 class="coluna2">
-                  <button ion-button color="light" class="botoes" full>Iniciar</button>
+              <ion-col col-4 offset-1 col-md-2 offset-md-3 class="coluna2">
+                  <button ion-button color="light" class="botoes" full (click)="showAlert()">Iniciar</button>
               </ion-col>
               </ion-row>
             </ion-item>
@@ -34,12 +34,12 @@
         <ion-list>
           <ion-item no-padding>  
             <ion-row>
-            <ion-col col-7>              
+            <ion-col col-7 col-md-7>              
               <p class="paragrafos"> Criar novo <br>
                formulário </p>
             </ion-col>
-            <ion-col col-4 offset-1 class="coluna2">
-                <button ion-button color="light" class="botoes" full> <ion-icon class="iconHome"  name="md-person-add"></ion-icon></button>
+            <ion-col col-4 offset-1 col-md-2 offset-md-3 class="coluna2">
+                <button ion-button color="light" class="botoes" (click)="irParaNovo()" full> <ion-icon class="iconHome"  name="md-person-add"></ion-icon></button>
             </ion-col>
             </ion-row>
           </ion-item>
@@ -48,11 +48,11 @@
         <ion-list>
           <ion-item no-padding>  
             <ion-row>
-            <ion-col col-7>              
+            <ion-col col-7 col-md-7>              
               <p class="paragrafos" id="minhaLista"> Minha lista </p>
             </ion-col>
-            <ion-col col-4 offset-1 class="coluna2">
-            <button ion-button full color="light" class="botoes">Abrir</button>            
+            <ion-col col-4 offset-1 col-md-2 offset-md-3 class="coluna2">
+            <button ion-button full color="light" class="botoes" (click)="irParaArquivos()"> Abrir </button>            
             </ion-col>
             </ion-row>
           </ion-item>

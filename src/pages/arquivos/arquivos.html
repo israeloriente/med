@@ -20,15 +20,15 @@
             </ion-col>
              <ion-col col-6 col-md-9 class="coluna1" (click)="linkNaoDefinido()" id="active">
               <p class="linha1Col1" id="nomePaciente"> <ion-icon class="iconCenter" name="person"></ion-icon>
-              Israel Nunes Oriente</p>
+              {{meusArquivos.nome}}</p>
               <p class="linha2Col1"> <ion-icon class="iconCenter" name="md-calendar"></ion-icon> 
-              27/10/2018 <ion-icon class="iconCenter" id="iconNotaBoa" name="ios-paper-outline"></ion-icon> 9.70 </p>
+              {{meusArquivos.dataConsulta}} <ion-icon class="iconCenter" id="iconNotaBoa" name="ios-paper-outline"></ion-icon> {{meusArquivos.notaAluno}} </p>
             </ion-col>
             <ion-col col-2 col-md-1 class="colunaBotao">
-                <button ion-button full color="light" class="botoes"> <ion-icon class="iconTrash" name="trash"></ion-icon> </button>
+                <button ion-button full color="light" class="botoes" (click)="apagarPaciente()"> <ion-icon class="iconTrash" name="trash"></ion-icon> </button>
             </ion-col>
             <ion-col col-2 col-md-1 class="colunaBotao" id="colunaBotaoNuvem">
-                <button ion-button color="light" class="botoes"> <ion-icon class="iconCloud" name="md-cloud-upload"></ion-icon> </button>
+                <button ion-button color="light" class="botoes" (click)="confirmarEnvio()"> <ion-icon class="iconCloud" name="md-cloud-upload"></ion-icon> </button>
             </ion-col>
           </ion-row>
         </ion-item>
@@ -49,10 +49,10 @@
               27/10/2018 <ion-icon class="iconCenter" id="iconNotaRuim" name="ios-paper-outline"></ion-icon> 5.20 </p>
             </ion-col>
             <ion-col col-2 col-md-1 class="colunaBotao">
-                <button ion-button full color="light" class="botoes"> <ion-icon class="iconTrash" name="trash"></ion-icon> </button>
+                <button ion-button full color="light" class="botoes" (click)="apagarPaciente()"> <ion-icon class="iconTrash" name="trash"></ion-icon> </button>
             </ion-col>
             <ion-col col-2 col-md-1 class="colunaBotao" id="colunaBotaoNuvem">
-                <button ion-button color="light" class="botoes"> <ion-icon class="iconCloud" name="md-cloud-upload"></ion-icon> </button>
+                <button ion-button color="light" class="botoes" (click)="confirmarEnvio()"> <ion-icon class="iconCloud" name="md-cloud-upload"></ion-icon> </button>
             </ion-col>
           </ion-row>
         </ion-item>
